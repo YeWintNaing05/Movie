@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+>
+
+
+
+            <ImageView
+                android:id="@+id/imgMovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:scaleType="centerCrop"
+                 />
+
+
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_favorite_border_black_36dp"
+                android:tint="@color/colorAccent" />
+
+            <ImageButton
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_arrow_back_black_36dp"
+                android:tint="@color/white" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/movieTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Rampage"
+                        android:textColor="@color/activeColor"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                   <!-- <TextView
+                        android:textSize="@dimen/_18sdp"
+
+                        android:id="@+id/txtPopular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="7.1"
+                        android:textColor="@color/activeColor"
+                        android:textStyle="bold" />-->
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_gravity="center"
+                        android:id="@+id/vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/txtVote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="6"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin"
+
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/overview"
+                    android:textSize="@dimen/_18sdp"
+/>
+                <TextView
+                    android:id="@+id/txtOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/test" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin"
+
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/trailer"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/left_margin"
+
+                    android:id="@+id/rvTrailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin"
+
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/review"
+                    android:textSize="@dimen/_18sdp"
+/>
+
+                <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/rvReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

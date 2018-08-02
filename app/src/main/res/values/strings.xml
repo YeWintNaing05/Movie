@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="discover_the_movie">Discover The Movie</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="upcoming_movie">Upcoming Movie</string>
+    <string name="popular_movie">Popular Movie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview">Overview</string>
+    <string name="test">All of the source code to this product is available under licenses which are both free and open source. A URL identifying the specific source code used to create this copy can be found on the build configuration page, and you can read instructions on how to download and build the code for yourself.  More specifically, most of the source code is available under the Mozilla Public License 2.0 (MPL). The MPL has a FAQ to help you understand it. The remainder of the software which is not under the MPL is available under one of a variety of other free and open source licenses. Those that require reproduction of the license text in the distribution are given below. (Note: your copy of this product may not contain code covered by one or more of the licenses listed here, depending on the exact product and version you choose.)</string>
+    <string name="review">Review</string>
+    <string name="trailer">Trailer</string>
+</resources>
